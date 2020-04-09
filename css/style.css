@@ -1,0 +1,416 @@
+/* ---- reset ---- */
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+  }
+  canvas {
+    display: block;
+    vertical-align: bottom;
+  } /* ---- particles.js container ---- */
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 2100px;
+    background-size: cover;
+    background-color: #ffffff;
+    z-index: -1;
+  } /* ---- stats.js ---- */
+  #stats,
+  .count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  #stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  .count-particles {
+    border-radius: 0 0 3px 3px;
+  }
+  /*--- Start Navigation ---*/
+
+header {
+  width: 100%;
+}
+.header .container ul{
+  padding: 15px;
+  letter-spacing: .1rem;
+}
+.navbar .nav-nav li a {
+  color: rgba( 80, 89, 98, 0.8);
+}
+.header li a:hover {
+  color: red;
+}
+/*--- End Navigation ---*/
+
+/*--- Start Home ---*/
+
+.mainvisual {
+  width: 100%;
+  padding: 200px 100px 20px 100px;
+  height: 500px;
+}
+.mainvisual h1 {
+  font-size: 70px;
+}
+.mainvisual h3 {
+  font-size: 20px;
+  letter-spacing: .1rem;
+}
+
+/*---  End Home ---*/
+
+/*---  Start Works ---*/
+
+.works {
+  width: 100%;
+  padding: 0px 300px 100px 300px;
+}
+.works h1{
+  font-size: 40px;
+}
+.works .col-lg-4 {
+  padding: 0;
+}
+.works img {
+  max-width: 100%;
+  max-height: 233px;
+  margin: auto;
+}
+.photo .caption {
+  font-size: 150%;
+  text-align: center;
+  padding-top: 40px;
+  color: #fff;
+}
+.photo .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transiton: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.photo:hover .mask {
+  opacity: 1;
+}
+.works .col-md-4 {
+  padding: 0px 0px 0px 0px;
+}
+/*---  End Works ---*/
+
+/*---  Start About ---*/
+
+.profile {
+  padding: 100px 115px;
+}
+.profile h1 {
+  font-size: 40px;
+}
+.profile img {
+  width: 40vh;
+  height: 40vh;
+  object-fit: cover;
+  object-position: 0 7%;
+}
+.profile ul {
+  padding: 20px 10px 10px 20px;
+}
+.profile li {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.card {
+  height: 35vh;
+}
+.card-body {
+  font-size: 15px;
+}
+/*---  End About ---*/
+
+/*--- Start Contact ---*/
+
+#contact {
+  padding: 100px 115px;
+}
+/*--- End Contact ---*/
+
+/*--- Start Slillbar --*/
+
+@-keyframes grow-90{
+   from { right: 100%; }
+   to   { right: 75%; }
+}
+
+@-webkit-keyframes grow-90{
+   from { right: 100%; }
+   to   { right: 75%; }
+}
+
+@-keyframes grow-75{
+   from { right: 100%; }
+   to   { right: 15%; }
+}
+
+@-webkit-keyframes grow-75{
+   from { right: 100%; }
+   to   { right: 15%; }
+}
+
+@-keyframes grow-50{
+   from { right: 100%; }
+   to   { right: 15%; }
+}
+
+@-webkit-keyframes grow-50 {
+   from { right: 100%; }
+   to   { right: 15%; }
+}
+.skill {
+  padding: 20px 0px;
+}
+
+#skills {
+  margin: 10px auto 0 auto;
+  position: relative;
+  width: 100%;
+  float: left;
+}
+
+#apps {
+  float: left;
+  text-align: right;
+}
+
+#apps p {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  position: relative;
+  text-align: right;
+  z-index: 2;
+}
+
+#scale {
+  padding-bottom: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+}
+
+#scale p {
+  position: absolute;
+  bottom: -20px;
+  left: -0.30%;
+}
+
+#scale p.one { left: 24%; }
+#scale p.two { left: 49%; }
+#scale p.three { left: 74%; }
+#scale p.four { left: 99%; }
+
+.grid {
+  border-left: 1px dotted #505962;
+  border-bottom: 1px dotted #505962;
+  float: left;
+  padding: 10px 0;
+  position: relative;
+  width: 80%;
+}
+
+.bar {
+  float: left;
+  height: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.bar .inner {
+  background-color: #505962;
+  position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+.bar.pct-90 .inner {  
+  -webkit-animation-duration: 2s;
+  -webkit-animation-name: grow-90;
+  right: 75%;
+}
+
+.bar.pct-75 .inner {  
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: grow-75;
+  right: 15%;
+}
+
+.bar.pct-50 .inner {  
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: grow-50;
+  right: 15%;
+}
+
+.v-divider {
+  border-right: 1px dotted #505962;
+  position: absolute;
+  left: 0;
+  right: 25%;
+  bottom: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.v-divider.one { right: 75%; }
+.v-divider.two { right: 50%; }
+
+@media screen and (max-width: 1400px) {
+  .profile .container {
+    max-width: 100%;
+  }
+  .profile img {
+    width: 35vh;
+    height: 35vh;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .profile .container {
+    max-width: 100%;
+  }
+  .profile img {
+    width: 30vh;
+    height: 30vh;
+  }
+  #particles-js {
+    height: 2600px;
+  }
+  .profile {
+    text-align: center;
+  }
+  .profile .nav-item span {
+    display: block;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #work {
+    padding: 0px 150px;
+  }
+  .photo .caption {
+    font-size: 200%;
+    padding-top: 75px;
+  }
+  .profile ul {
+    padding: 20px 10px 10px 20px;
+  }
+  .card {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #particles-js {
+    height: 3330px;
+  }
+  .container {
+    margin-top: 100px;
+  }
+  .mainvisual {
+    padding: 60px 100px 120px 100px;
+  }
+  .mainvisual h1{
+    font-size: 6rem;
+  }
+  .mainvisual h3 {
+    font-size: 2rem;
+  }
+  .works {
+    padding: 0px 100px;
+  }
+  .profile {
+    padding-top: 70px;
+    text-align: center;
+  }
+  .profile .img {
+    width: 100%;
+  }
+  .profile h1 {
+    font-size: 4rem;
+    padding-bottom: 40px;
+  }
+  .profile ul {
+    padding-left: 30px;
+  }
+  .profile .nav-item {
+    font-size: 1.5rem;
+  }
+  .profile .nav-item span {
+    display: block;
+  }
+  .card-body{
+    line-height: 5vh;
+  }
+  #contact {
+    text-align: center;
+  }
+  #contact h1 {
+    font-size: 4rem;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #particles-js {
+    height: 4500px;
+  }
+  .container {
+    margin-top: 40px;
+  }
+  .mainvisual {
+    padding-top: 120px;
+  }
+  .mainvisual h1{
+    font-size: 5rem;
+  }
+  #work {
+    padding: 0;
+  }
+  #work .container-fluid {
+    padding: 0;
+    margin: 0;
+  }
+  .works img{
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .photo .caption {
+    font-size: 5rem;
+    padding-top: 100px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .profile h1{
+    font-size: 3rem;
+  }
+  #apps p{
+    font-size: .1rem;
+    width: 20%;
+  }
+  .grid {
+    width: 80%;
+  }
+  #contact h1{
+    font-size: 3rem;
+  }
+}
